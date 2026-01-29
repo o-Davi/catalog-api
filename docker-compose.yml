@@ -31,9 +31,10 @@ services:
     environment:
       ASPNETCORE_URLS: http://+:8080
       ConnectionStrings__DefaultConnection: Host=postgres;Port=5432;Database=${POSTGRES_DB};Username=${POSTGRES_USER};Password=${POSTGRES_PASSWORD}
-      Jwt__Key: ${JWT_KEY}
+      Jwt__Key: ${JWT__KEY}
       Jwt__Issuer: ${JWT_ISSUER}
       Jwt__Audience: ${JWT_AUDIENCE}
+      Jwt__ExpiresInMinutes: ${JWT_EXPIRESINMINUTES}
 
 volumes:
   postgres_data:

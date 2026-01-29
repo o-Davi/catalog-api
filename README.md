@@ -62,9 +62,10 @@ POSTGRES_DB=catalogdb
 POSTGRES_USER=postgres
 POSTGRES_PASSWORD=postgres
 
-JWT_KEY=INSIRA-SUA-CHAVE-AQUI(32-caracteres) 
+JWT__KEY=INSIRA-SUA-CHAVE-AQUI(32-caracteres) 
 JWT_ISSUER=CatalogApi
 JWT_AUDIENCE=CatalogApiUsers
+JWT_EXPIRESINMINUTES=60
 ```
 ATENÇÃO: No campo "JWT_KEY" você precisa inserir a sua chave secreta de 32 caracteres.
 
